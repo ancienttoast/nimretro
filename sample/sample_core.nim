@@ -34,7 +34,7 @@ proc update_input() =
 
   mouse_rel_x = ((input_state_cb(0, RETRO_DEVICE_POINTER, 0, RETRO_DEVICE_ID_POINTER_X) / 0x7fff) * 160 + 160).int32
   mouse_rel_y = ((input_state_cb(0, RETRO_DEVICE_POINTER, 0, RETRO_DEVICE_ID_POINTER_Y) / 0x7fff) * 120 + 120).int32
-  echo mouse_rel_x, "  ", mouse_rel_y
+  log_cb(RETRO_LOG_DEBUG, "Mouse position: %d %d\n", mouse_rel_x, mouse_rel_y)
 
 proc render_checkered() =
   var
