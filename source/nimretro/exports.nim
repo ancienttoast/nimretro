@@ -1,6 +1,3 @@
-import
-  libretro
-
 {.push cdecl, exportc, dynlib.}
 
 proc retro_set_environment*(cb: retro_environment_t)

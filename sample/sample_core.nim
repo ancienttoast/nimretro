@@ -1,7 +1,7 @@
 import
-  libretro
+  nimretro/types
 include
-  libretro/exports
+  nimretro/exports
 
 
 
@@ -68,7 +68,10 @@ proc audio_callback() =
 
 
 
+proc NimMain() {.importc.}
+
 proc retro_init*() =
+  NimMain()
   frame_buf = newSeq[uint32](320 * 240)
 
 proc retro_deinit*() =
