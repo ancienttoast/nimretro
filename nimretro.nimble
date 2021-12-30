@@ -1,6 +1,6 @@
 # Package
 version       = "0.1.0"
-author        = "stilll"
+author        = "ancienttoast"
 description   = "nimretro"
 license       = "MIT"
 srcDir        = "source"
